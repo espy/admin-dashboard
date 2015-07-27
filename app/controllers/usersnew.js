@@ -9,6 +9,7 @@ export default Ember.Controller.extend({
   sortDesc: true,
   deletingUser: false,
   selectedUser: undefined,
+  newUsers: 0,
 
   pageNumber: function () {
     return this.get('skipFactor') + 1;
@@ -39,6 +40,8 @@ export default Ember.Controller.extend({
   // so that the route can refresh the model.
   actions: {
     updateUserList: function () {
+      console.log('update controller, set newUsers to 0');
+      this.set('newUsers', 0);
       return true;
     },
     search: function () {
