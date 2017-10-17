@@ -1,5 +1,7 @@
 # Admin-dashboard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/espy/admin-dashboard.svg)](https://greenkeeper.io/)
+
 Ember version of the Hoodie Admin Dashboard. Currently lets you log in and out, fetch all the plugin info, display plugin backends, and is ready to handle requests to Hoodie that require authentication. All Ajax requests done through Ember will transmit the bearerToken correctly once the admin has signed in.
 
 ## Prerequisites
